@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT:8080}
   servlet:
     context-path: /
 
@@ -8,9 +8,9 @@ spring:
     name: api-astronomia
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/astronomia_db
-    username: postgres
-    password: ${DB_PASSWORD:12345678}
+    url: ${SPRING_DATASOURCE_URL:${DB_URL:jdbc:postgresql://localhost:5432/astronomia_db}}
+    username: ${SPRING_DATASOURCE_USERNAME:${DB_USERNAME:postgres}}
+    password: ${SPRING_DATASOURCE_PASSWORD:${DB_PASSWORD:12345678}}
     driver-class-name: org.postgresql.Driver
 
   jpa:
