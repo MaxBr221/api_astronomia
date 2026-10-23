@@ -8,7 +8,7 @@ spring:
     name: api-astronomia
 
   datasource:
-    url: ${SPRING_DATASOURCE_URL:${DB_URL:jdbc:postgresql://localhost:5432/astronomia_db}}
+    url: ${SPRING_DATASOURCE_URL:${DB_URL:jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:astronomia_db}${DB_SSL:}}}
     username: ${SPRING_DATASOURCE_USERNAME:${DB_USERNAME:postgres}}
     password: ${SPRING_DATASOURCE_PASSWORD:${DB_PASSWORD:12345678}}
     driver-class-name: org.postgresql.Driver
