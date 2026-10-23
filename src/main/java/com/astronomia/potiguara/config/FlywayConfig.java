@@ -1,0 +1,20 @@
+package com.astronomia.potiguara.config;
+
+import org.flywaydb.core.Flyway;
+import org.springframework.boot.autoconfigure.flyway.FlywayMigrationStrategy;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class FlywayConfig {
+
+    @Bean
+    public FlywayMigrationStrategy flywayMigrationStrategy() {
+        return flyway -> {
+            // Corrige automaticamente divergências de checksum (ex: quebra de linha CRLF do Windows vs LF do Linux)
+            flyway.repair();
+            // Executa as migrações pendentes
+            flyway.migrate();
+        };
+    }
+}
