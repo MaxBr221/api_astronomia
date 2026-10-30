@@ -38,7 +38,7 @@ INSERT INTO constellations (
 (
     4, 'veado', 'O VEADO SAGRADO', 'Guata Guasu', 'Potiguara / Tupi-Guarani',
     'Renovação e Germinação das Matas', 'BLOQUEADO', 'BLOQUEADO 🔒', 0,
-    '/assets/starfield_bg.jpg', 'Escorpião e Sagitário', 'Primavera e florescimento da mata litorânea',
+    '/assets/veado_celeste.jpg', 'Escorpião e Sagitário', 'Primavera e florescimento da mata litorânea',
     'Setembro a Novembro', 'Baía da Traição - PB',
     'Guata Guasu oikove...',
     'Constelação que desponta na primavera anunciando a brotação de novas folhas e o período reprodutivo dos animais da Mata Atlântica de restinga.',
@@ -138,7 +138,7 @@ INSERT INTO exercise_pairs (
     'O rio estelar da Via Láctea é a senda sagrada por onde viajam os espíritos dos antepassados e serve como bússola natural para a travessia noturna na mata e no mar.'
 ),
 (
-    1, 'veado', 'O Veado Sagrado (Guata Guasu)', 'Escorpião e Sagitário', '/assets/starfield_bg.jpg',
+    1, 'veado', 'O Veado Sagrado (Guata Guasu)', 'Escorpião e Sagitário', '/assets/veado_celeste.jpg',
     'primavera_renovacao', 'Primavera e florescimento da mata litorânea', 'Regeneração da Floresta e Fauna • Setembro', '/assets/corn_harvest.jpg',
     'A aparição desta constelação aponta para o despertar da fauna nativa e o florescimento das árvores frutíferas da Mata Atlântica de restinga.'
 );
